@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Site Tutoriel J-Query </title> 
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+	  
+        body
+	    {
+        background-size: 100%;
+        background-image: url("b.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+        p:hover
+		    {
+		     border-left:0.5px solid grey;
+		    }
+	     .conteur1
+	     	{
+            width           :15%;
+	     	margin          :1px 1px 1px 1px;
+	     	padding         :5px 5px 5px 5px;
+	     	background-color: black;
+	     	float           : right;
+	     	border          : 1px solid blue;
+	     	}
+	     .conteur2
+	     	{
+        
+	     	width: 67.4%;
+	     	background-color: transparent;
+	     	float:right;
+	     	border: 1px solid yellow;
+	     	margin          :1px 1px 1px 1px;
+	     	padding         :1px 1px 1px 1px;
+	      }
+        .conteur11
+        {
+        width           :15%;
+        margin          :1px 1px 1px 1px;
+        padding         :5px 5px 5px 5px; 
+        background-color: black;
+        float           : left;
+        border          : 1px solid blue;
+        }  
+</style>
+<script>
+$( function(){
+$( "#accordion" ).accordion();
+});
+</script>
+<script>
+$( function() {
+$( "#accordion2" ).accordion();
+});
+</script>
+<script>
+$( function() {
+$( "#tabs" ).tabs({
+collapsible: true
+});
+});
+</script>
+<script>
+$( function() {
+$( "#tabs2" ).tabs({
+collapsible: true
+});
+});
+</script> 
+</head>
+<body>
+<header>
+			<h1 style=" 
+			font-size: 90px;
+			font-family: Freestyle Script; 
+			border: 2px solid blue;
+			/**background: content-box radial-gradient(crimson, skyblue);**/
+			text-align: center; 
+			height: 1.2em;
+			margin:5px 5px 5px 5px;
+			text-shadow: 6px 6px 8px black;
+			border-radius: 10px;
+			"> <em > <samp style="color: white" id="DECOUVRIR"> Site Tutoriel J-Query </samp></em> 
+			</h1>	
+</header>
+<nav>
+<h3 style=" text-align: center;
+			border: 0.5px solid white;
+			background-color:black;
+			padding: 5px 5px 5px 5px;
+			margin: 1px 1px 1px 1px;">
+			<span style="padding: 20px;">
+			<a href="https://developer.mozilla.org/fr/" title="si vous voulez aller à mozilla developer" target="_blank">DEVELOPER MOZILLA </a>
+			</span>
+			<span style="padding: 20px;">
+			<a href="https://christoffel.alwaysdata.net/ufaz/taghomework/" title="si vous voulez savoir le nombre des élèments distincts" target="_blank">CODE ANALYSIS</a>
+			</span>
+			<span style="padding: 20px;">
+			<a href="https://validator.w3.org" title="si vous voulez valider le code de votre page html" target="_blank">VALIDATOR 3W </a>
+			</span>
+			<span style="padding: 20px; ">
+			<a href="https://code.jquery.com/ui/" target="_blank" title="pour aller à JQuery ui ">Site J-Query ui</a>
+			</span>
+			<span style="padding: 20px;">
+			<a href="https://jquery.com" title="pour aller à la jQuery" target="_blank">Site jquery</a>
+			</span>
+			<span style="padding: 20px;">
+			<a href="http://abdelkader.alwaysdata.net"  target="_blank" title="aller au site d'alwaysdata">ALWAYSDATA</a>
+			</span>
+			</h3>
+	</nav>
+<aside>
+<div class="conteur1">
+<div id="accordion">
+  <h3>Qu'est-ce que jQuery?
+</h3>
+  <div>
+    <p>
+     jQuery est une petite bibliothèque JavaScript rapide et riche en fonctionnalités. Elle simplifie considérablement la navigation et la manipulation de documents HTML, la gestion des événements, l'animation et Ajax grâce à une API facile à utiliser qui fonctionne avec une multitude de navigateurs. 
+    </p>
+  </div>
+  <h3>jQuery API</h3>
+  <div>
+  <p>
+    jQuery est une petite bibliothèque JavaScript rapide et riche en fonctionnalités. Elle simplifie considérablement la navigation et la manipulation de documents HTML, la gestion des événements, l'animation et Ajax grâce à une API facile à utiliser qui fonctionne avec une multitude de navigateurs. Si vous êtes nouveau à jQuery, nous vous recommandons de consulter le Centre d'apprentissage jQuery.
+  </p>
+  </div>
+  <h3>jQuery UI Demos</h3>
+  <div>
+   <p>
+   <b> Interactions </b><br>
+    Les interactions ajoutent à tout élément des comportements de base basés sur la souris. Vous pouvez créer des listes triables, des éléments redimensionnables, des comportements de glisser-déposer et bien plus encore en quelques lignes de code. Les interactions constituent également d'excellents éléments de base pour des widgets et des applications plus complexes.<br>
+    </p>
+  </div>
+  <h3>jQuery UI Basics</h3>
+  <div>
+    <p>Utilisation des options <br>
+      Chaque plugin de jQuery UI a une configuration par défaut qui est adaptée au cas d'utilisation le plus basique et le plus courant. Mais si vous souhaitez qu'un plugin se comporte différemment de sa configuration par défaut, vous pouvez remplacer chacun de ses paramètres par défaut en utilisant les "options". 
+    </p>
+  </div>
+  <h3>visuelle</h3>
+  <div>
+    <p>
+      Conception d'un thème jQuery UI <br>
+Si vous souhaitez concevoir votre propre thème, jQuery UI dispose d'une application très astucieuse à cet effet. Elle s'appelle ThemeRoller, et vous pouvez toujours y accéder soit en cliquant sur le lien "Themes" dans la navigation de jQuery UI, soit en allant simplement sur jQuery UI ThemeRoller.</p>
+  </div>
+  <h3>Télécharger le thème</h3>
+  <div>
+    <p>
+    Lorsque vous cliquez sur le bouton "Télécharger le thème" dans ThemeRoller, vous serez dirigé vers le Download Builder et votre thème personnalisé sera automatiquement sélectionné dans le menu déroulant Theme. Vous pouvez configurer votre pack de téléchargement plus loin à partir de là. Une fois que vous aurez téléchargé, vous verrez que la page example.
+    </p>
+  </div>
+  <h3>Plugins</h3>
+  <div>
+    <p>
+    Un plugin jQuery est simplement une nouvelle méthode que nous utilisons pour étendre l'objet prototype de jQuery. En étendant l'objet prototype, vous permettez à tous les objets jQuery d'hériter de toutes les méthodes que vous ajoutez. Comme établi, chaque fois que vous appelez jQuery(), vous créez un nouvel objet jQuery, avec toutes les méthodes jQuery héritées.
+    </p>
+  </div>
+</div>
+</div>
+</aside>
+<section>                         
+<div class="conteur2">
+<header></header>
+<article>
+<h2 style="background-color: #86F71C;border-radius: 10px; margin: 5px 5px 5px 5px; padding:10px 5px 5px 5px;text-align: center;text-shadow: 4px 2px 2px white;height: 35px;" >DECOUVRIR L'UNIVERS DE J-QUERY UI</h2>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Définition</a></li>
+    <li><a href="#tabs-2">Widgets</a></li>
+    <li><a href="#tabs-3">Effets</a></li>
+    <li><a href="#tabs-4">Exemple</a></li>
+    <li><a href="#tabs-5">Téléchargement</a></li>
+    <li><a href="#tabs-6">Choisir son thème</a></li> 
+  </ul>
+  <div id="tabs-1">
+    <p><strong>Qu'est ce qu'un JQuery ?</strong></p>
+    <p>jQuery UI est une collection de widgets, effets visuels et thèmes implémentés avec jQuery, des feuilles de style en cascade, et du HTML.<br>
+    Selon Libscore (en), un service d'analyses JavaScript, jQuery UI est utilisé sur plus de 197 000 sites dans le premier million, ce qui en fait la bibliothèque JavaScript la plus populaire6. Parmi ses utilisateurs les plus notables, on trouve Pinterest, PayPal, IMDb, The Huffington Post, et Netflix
+    </p>
+  </div>
+  <div id="tabs-2">
+<p><strong>Tous les widgets jQuery UI sont thémables</strong></p>
+<p>
+<b>Accordion</b> = container en accordéon.
+<b>Autocomplete</b> = boite d’auto-complétion basée sur les entrées de l'utilisateur.
+<b>Button</b> = apparence des boutons améliorée, transforme les boutons radio et cases à cocher en boutons poussoirs.
+<b>Datepicker</b> = sélecteur de date avancé.
+<b>Dialog</b> = boite de dialogue.
+<b>Menu</b> = affichage d'un menu.
+<b>Progressbar</b> = bar de progression animables.
+<b>Selectmenu</b> = duplication d'un élément HTML.
+<b>Slider</b> = diapositive.
+<b>Spinner</b> = bouton fléché.
+<b>Tabs</b> = onglet.
+<b>Tooltip</b> = infobulle.</p>
+  </div>
+  <div id="tabs-3">
+    <p><strong>Color Animation – animation de la transition d'une couleur à une autre.</strong></p>
+    <p>
+    <b>Toggle Class, Add Class, Remove Class, Switch Class</b>= animation de la transition d'un style à une autre.<br>
+    <b>Effect</b>= variété d'effets (apparition, diapositive, explosion, fondu, etc.)<br>
+    <b>Toggle</b>= activation ou désactivation des effets.<br>
+    <b>Hide, Show</b>= affichage ou masquage des effets.<br>
+    </p>
+  </div>
+  <div id="tabs-4">
+    <p><strong>Comment cela fonctionne-t-il ?</strong></p>
+    <p>Le plugin jQuery UI est en fait un regroupement de plusieurs mini-plugins, composant les interfaces utilisateurs (vous pouvez composer vous-même votre bouquet d'actions sur le site web officiel). Ensuite, c'est comme d'habitude : une fois incluses, les interfaces s'appellent comme des méthodes, sur les éléments adéquats. Évidemment, il existe des règles à respecter, mais nous verrez cela plus en détails ensuite.</p>
+  </div>
+  <div id="tabs-5">
+    <p><strong>Téléchargement et mise en place</strong></p>
+    <p>Pour télécharger les fichiers qui vous permettront de réaliser bon nombre de choses, rendez-vous sur la page Download du site dédié à jQuery UI. Vous pouvez voir que le plugin peut être décomposé en plusieurs parties :<br>
+    -Le « UI Core », qui définit le code indispensable au bon fonctionnement des interfaces utilisateurs ;<br>
+    -Les « interactions », qui sont toutes les interfaces qui permettront à l'utilisateur d'interagir directement avec la page ;<br>
+    -Les « widgets », qui sont des plugins tiers, moins conséquents, et qui réalisent des actions plus ciblées ; <br>
+    -Les « effects », qui sont simplement des effets additionnels à ceux de jQuery.<br>
+    -Les boîtes à cocher sur le site vous invitent à ne télécharger que les interfaces qui vous seront utiles.<br>
+     Comme ce doit être la première fois que vous découvrez jQuery UI, nous vous conseillons de toutes les télécharger.
+    </p>
+  </div>
+  <div id="tabs-6">
+    <p><strong>Choisir son thème:Comment?</strong></p>
+    <p>Le code jQuery fonctionne de manière complémentaire avec un fichier CSS, qui va définir le style des différentes interfaces. Vous pouvez voir dans le menu de droite une petite section vous permettant de choisir votre thème.<br>
+    Par défaut, il en existe déjà une belle flopée, mais si aucun ne vous plaît, vous pouvez customiser vous-même vos interfaces utilisateur, grâce à un outil nommé Themeroller. Son fonctionnement est vraiment très intuitif, vous pourrez le dégoter sur cette page.</p>
+  </div>
+  </div>
+<h3 style="margin: 5px 5px 5px 5px;color: blue;"><strong>Architecture des fichiers</strong></h3>
+<p style="margin: 5px 5px 5px 5px;text-align: justify;">
+Une fois l'archive entre vos mains, vous pouvez la décompresser. À l'intérieur, vous trouverez plusieurs dossiers, dont l'utilité est variable : certains sont indispensables au bon fonctionnement de votre système, alors que d'autres peuvent tout bonnement être supprimés. Voyons ce qu'il en est grâce à un petit schéma<br>
+Le dossierjs/contient les frameworks jQuery et jQuery UI ; leur inclusion pouvant se faire par des serveurs externes, nous ne les utiliserons pas dans ce chapitre. Vous pouvez donc également supprimer le dossier. De la même manière, le dossiercss/nous indiffère, étant donné que son contenu est retrouvable dansdevelopment-bundle/themes/w <br>
+Le dossierjs/contient les frameworks jQuery et jQuery UI ; leur inclusion pouvant se faire par des serveurs externes, nous ne les utiliserons pas dans ce chapitre. Vous pouvez donc également supprimer le dossier. De la même manière, le dossiercss/nous indiffère, étant donné que son contenu est retrouvable dansdevelopment-bundle/themes/ <br>
+Au final, vous pouvez vous retrouver avec seulement le dossierdevelopment-bundle/, qui est le seul réellement indispensable. Pour alléger un peu ce dossier et s'y retrouver de manière plus efficace, vous pouvez supprimer les dossiersdemos/etdoc/, qui contiennent des informations retrouvables facilement sur le site officiel.
+</p>
+<h3 style="margin: 5px 5px 5px 5px;color: blue;"><strong>Inclusion du plugin</strong></h3>
+<p style="margin: 5px 5px 5px 5px;text-align: justify;">Comme vous vous en doutez sûrement, avant d'inclure jQuery UI, il faut également inclure jQuery. En effet, c'est l'ordre logique des choses : jQuery UI a besoin de jQuery pour fonctionner, ce dernier doit donc être inclus en premier !</p>
+<div id="tabs2">
+  <ul>
+    <li><a href="#tabs-12">Drag'n'Drop</a></li>
+    <li><a href="#tabs-22">jQuery Mobile</a></li>
+    <li><a href="#tabs-32">Une version mobile</a></li>
+    <li><a href="#tabs-42">Plateformes</a></li>
+    <li><a href="#tabs-52">Mettre en place</a></li>
+    <li><a href="#tabs-62">Redirection</a></li>
+</ul>
+  <div id="tabs-12">
+    <p><strong>Précisions sur le Drag'n'Drop</strong></p>
+    <p>Apparu il y a peu de temps, jQuery Mobile est un nouveau framework qui fait de plus en plus parler de lui, à cette époque où la navigation mobile croît de façon hallucinante. Cela permet aux développeurs de réaliser de véritables applications pour leur(s) site(s) web, et d'offrir une expérience utilisateur très sophistiquée sur presque toutes les plateformes. Comme d'habitude, le mot d'ordre est « simplicité », et nous allons voir qu'il est vraiment très aisé de mettre en place une version mobile de son site.</p>
+  </div>
+  <div id="tabs-22">
+    <p><strong>Le framework mobile : jQuery Mobile</strong></p>
+    <p>Apparu il y a peu de temps, jQuery Mobile est un nouveau framework qui fait de plus en plus parler de lui, à cette époque où la navigation mobile croît de façon hallucinante. Cela permet aux développeurs de réaliser de véritables applications pour leur(s) site(s) web, et d'offrir une expérience utilisateur très sophistiquée sur presque toutes les plateformes. Comme d'habitude, le mot d'ordre est « simplicité », et nous allons voir qu'il est vraiment très aisé de mettre en place une version mobile de son site.</p>
+  </div>
+  <div id="tabs-32">
+    <p><strong>L'intérêt d'une version mobile</strong></p>
+    <p>
+      La première question que l'on pourrait se poser est : « à quoi bon mettre en place une version mobile de mon site ? ». En effet, cela semble peu intéressant, quand on pense que les téléphones portables et autres plateformes du genre n'ont pas pour utilité première de naviguer sur Internet. À cette opinion nous répondrons : monumentale erreur !<br>
+      La navigation sur mobiles est de plus en plus courante, à l'heure où les smartphones se développent et deviennent de plus en plus puissants
+    </p>
+  </div>
+  <div id="tabs-42">
+    <p><strong>Plateformes supportées par le framework</strong></p>
+    <p>Le marché des smartphones est absolument immense en 2012, on estime d'ailleurs le chiffre d'affaire total à plusieurs milliards de dollars. En conséquence, on trouve énormément de différentes sortes de téléphones, et chacun possède ses spécificités. Exemple : le célèbre iPhone possède son système d'exploitation attitré, l'iOS, ainsi que son navigateur, Safari, alors que les téléphones de Google tournent sur Android.Nous devons donc régler un soucis de compatibilité, et nous assurer que notre site s'affiche correctement sur tous les navigateurs mobiles du marché.</p>
+  </div>
+  <div id="tabs-52">
+    <p><strong>Mettre en place jQuery Mobile</strong></p>
+    <p>Maintenant que nous avons fait le point et que vous connaissez l'importance de la navigation mobile à l'heure actuelle, nous allons voir comment offrir un service pareil à nos visiteurs.On doit d'abord s'assurer que la version mobile du site ne s'affiche que pour la navigation correspondante ; les visiteurs navigant sur leur ordinateur ne veulent sûrement accéder qu'à la version classique. Il vous faut donc créer un nouveau fichier, différent de votre index, vers lequel on sera redirigé automatiquement si le site détecte une navigation mobile.</p>
+  </div>
+  <div id="tabs-62">
+    <p><strong>Redirection par htaccess</strong></p>
+    <p>Ce type de redirection est basé sur les « user-agents » récupérés avec Apache. Ce sont simplement les informations que chaque navigateur renvoie, et qui permettent de déterminer plusieurs choses, comme son nom. Nous allons donc les utiliser pour déterminer si nous devons rediriger le visiteur ou pas. Inscrivez simplement les lignes suivantes dans un fichier appelé <b>htaccess :</b>
+    RewriteCond %{HTTP_USER_AGENT} "ipod|iphone|ipad|android|palm" [NC] <br>       
+    RewriteRule (.*) http://www.votre-site.com/votre-fichier-mobile.html [R=301,L]  <br>
+    </p>
+  </div>
+</div>
+</article>
+<footer>
+<a href="https://developer.mozilla.org/fr/docs/Glossaire/HTML" target="_blank">
+<h2 style="border: 1px solid #2AF20E; background-color: black; margin:5px 5px 5px 5px;height: 35px;padding:1px 1px 1px 1px;text-align: center;color: #2E94FA;">Pour plus de détail cliquer ici</h2></a>
+</footer>
+</div>
+</section>
+<aside>
+<div class="conteur11">	               
+<div id="accordion2">
+  <h3>les thèmes graphiques</h3>
+  <div>
+    <p>Il ne reste plus qu’à se préoccuper de la présentation graphique des widgets. jQuery UI propose une vingtaine de thèmes qui reprennent toutes les propriétés de style CSS nécessaires aux widgets ainsi qu’une combinaison de couleur d’arrière-plan, de police de caractères, de bords arrondis, d’ombres, etc.
+    </p>
+  </div>
+
+  <h3>Pour débuter</h3>
+  <div>
+    <p>
+    C’est une des particularités de jQuery par rapport au JavaScript classique. En effet, celui-ci commence à fonctionner lorsque tous les éléments du DOM sont disponibles soit bien avant le chargement complet de la page, images comprises, comme le fait JavaScript. Tous les éléments de la page sont alors inclus dans un objet que le développeur peut manipuler avec les sélecteurs, 
+  </p>
+  </div>
+  <h3>se servir de l’API ?</h3>
+  <div>
+    <p>
+    L’API de jQuery est un outil indispensable à la fois pour les développeurs novices et experts. En effet, l’utilité de l’API est double :
+    Le développeur connaît déjà la méthode et sa fonction, mais il n’est pas sûr de son utilisation. Dans ce cas l’API fournit les informations nécessaires, ainsi que des exemples pour utiliser correctement la méthode et obtenir ainsi le résultat souhaité.
+  </p>
+  </div>
+  <h3>Respect du thème</h3>
+  <div>
+    <p>
+    Ce wiki accepte des entrées en rapport avec la technologie éducative et domaines associés (éducation, psychologie, informatique, ....)
+    Vous êtes libres de signer un article ou un chapitre, d'exprimer vos opinions et de "spéculer" (contrairement à Wikipedia).
+  </p>
+  </div>
+  <h3>jQuery UI</h3>
+  <div>
+    <p>
+    En complément de la bibliothèque elle-même, jQuery met aussi à disposition des éléments utiles pour la construction d’interfaces utilisateurs (UI) tel que des effets, des éléments interactifs (e.g. tabs, boutons, …) des thèmes graphiques, ou d’interactions communes (e.g. « drag and drop »)
+  </p>
+  </div>
+  <h3>CDN</h3>
+  <div>
+    <p>Le développement d'un site web est un processus long et fastidieux. Les développeurs en amont doivent particulièrement bien maîtriser des langages tels que HTML, CSS et JavaScript pour s'assurer que les sites qu'ils développent sont à la fois fonctionnels et attrayants.
+    </p>   
+  </div>
+  <h3>Utilisation CDN</h3>
+  <div>
+    <p>Basé sur jQuery, jQueryUI est un premier cadre de développement frontal mobile très populaire. Comme jQuery, il est basé sur JavaScript, CSS et HTML. Son utilisation permet aux développeurs de travailler rapidement et avec précision.Les principales caractéristiques de ce framework sont les widgets, les effets, les interactions et les utilitaires. Ils permettent de créer une interface utilisateur attrayante</p>
+  </div>
+  </div>
+  </div>
+  </aside>
+<footer>
+<h1 style=" font-family: serif;
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center; 
+			height: 90px;
+			margin:920px 5px 5px 5px;
+			text-shadow: 6px 6px 8px white; 
+			padding: 5px 5px 5px 5px"> 
+			<em >
+			<samp style="color: black" > 
+			Université de Strasbourg – 2021-2020<br>
+			Institut national supérieur du professorat et de l'éducation | INSPÉ de l'Académie de Strasbourg<br>
+			<small> 141 avenue de Colmar - BP 40102 - F-67024 Strasbourg cedex -  Plans d'accès </small><br>
+ 			<small>+33 (0)3 88 43 82 00 </small><br>
+			</samp>
+		    </em>
+			</h1>
+</footer>
+</body>
+</html>
